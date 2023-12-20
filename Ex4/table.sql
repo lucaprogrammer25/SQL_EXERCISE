@@ -31,3 +31,13 @@ VALUES (3, 'Whispers of the Wind', 'Amelia Blackburn', 'Romance', 1982, '1234567
 
 INSERT INTO Books (book_id, title, author, genre, published_year, isbn, price, rating, stock_count, publisher, number_of_pages)
 VALUES (4, 'The Galactic Odyssey', 'Orion Starfield', 'Science Fiction', 2005, '1234567890126', 19.99, 4.9, 15, 'Nebula Press', 450);
+
+-- Exercise 4
+UPDATE
+    Books
+SET
+    price = 13.99,
+    stock_count = stock_count - 1
+WHERE
+    title = 'War and Peace';
+
