@@ -42,7 +42,13 @@ WHERE
     title = 'War and Peace';
 
 -- Exercise 5
-GRANT SELECT, UPDATE ON Books TO 'Martin'@'localhost'
+GRANT SELECT, UPDATE ON Books TO 'Martin'@'localhost';
 
 -- Exercise 6
-REVOKE UPDATE ON Books FROM 'Martin'@'localhost'
+REVOKE UPDATE ON Books FROM 'Martin'@'localhost';
+
+-- Exercise 7
+BEGIN TRANSACTION;
+DELETE FROM Books WHERE book_id = 101;
+SAVEPOINT SP1;
+COMMIT;
