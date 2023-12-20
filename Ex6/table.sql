@@ -43,3 +43,6 @@ WHERE
 
 -- Exercise 5
 GRANT SELECT, UPDATE ON Books TO 'Martin'@'localhost'
+
+-- Exercise 6
+REVOKE UPDATE ON Books FROM 'Martin'@'localhost'
