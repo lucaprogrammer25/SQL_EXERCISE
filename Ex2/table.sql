@@ -10,3 +10,11 @@ CREATE TABLE Books (
     rating DECIMAL(2, 1),
     stock_count INT
 );
+
+-- Exercise 2
+ALTER TABLE
+    Books
+ADD
+    publisher VARCHAR(255),
+ADD
+    number_of_pages INT;
